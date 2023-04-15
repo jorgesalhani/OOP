@@ -6,9 +6,17 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Classroom.Topic01.Ex5.Main",
+            "projectName": "OOP_d3de472e"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "${file}",
+            "args": ""
         }
     ]
 }
