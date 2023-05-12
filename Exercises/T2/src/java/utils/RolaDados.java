@@ -35,10 +35,28 @@ public class RolaDados{
   @Override
   public String toString() {
     String rolaDadosString = "";
+    int numLinhasPrint = 5;
+
+    int tamLinha0 = dados.get(0).toString().split("\n")[0].length();
+    String indiceDado = " ";
     for (int i = 0; i < dados.size(); i++) {
-      rolaDadosString.concat(dados.get(i).toString());
-      System.out.print(dados.get(i).toString());
+      indiceDado += String.valueOf(i);
+      for (int j = 0; j < tamLinha0; j++) {
+        indiceDado += " ";
+      }
     }
+    indiceDado += "\n";
+    
+
+    rolaDadosString += indiceDado;
+    for (int linha = 0; linha < numLinhasPrint; linha++) {
+      for (int i = 0; i < dados.size(); i++) {
+        String linhaDado = dados.get(i).toString().split("\n")[linha];
+        rolaDadosString += String.format(" %s", linhaDado);
+      }
+      rolaDadosString += "\n";
+    }
+    System.out.println(rolaDadosString);
     return rolaDadosString;
   }
 }

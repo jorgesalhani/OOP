@@ -96,9 +96,9 @@ public class Dado extends Random{
         ladoEmString =
           """
           +-----+
-          |*   *|
-          |*   *|
-          |*   *|
+          |* * *|
+          |     |
+          |* * *|
           +-----+
           """
         ;
