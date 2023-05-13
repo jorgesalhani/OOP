@@ -31,7 +31,7 @@ public class Placar {
     int pontuacao = 0;
     for (int i = 0; i < histograma.length; i++) {
       if (histograma[i] >= 5) {
-        pontuacao = 30;
+        pontuacao = 40;
       }
     }
     return pontuacao;
@@ -112,7 +112,7 @@ public class Placar {
         }
       }
 
-      posicoes[posicao] = String.valueOf(pontuacao);
+      posicoes[posicao-1] = String.valueOf(pontuacao);
       score += pontuacao;
 
     } catch (Exception ex) {

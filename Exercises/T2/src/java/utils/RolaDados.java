@@ -39,7 +39,7 @@ public class RolaDados{
 
     int tamLinha0 = dados.get(0).toString().split("\n")[0].length();
     String indiceDado = " ";
-    for (int i = 0; i < dados.size(); i++) {
+    for (int i = 1; i <= dados.size(); i++) {
       indiceDado += String.valueOf(i);
       for (int j = 0; j < tamLinha0; j++) {
         indiceDado += " ";
@@ -56,7 +56,6 @@ public class RolaDados{
       }
       rolaDadosString += "\n";
     }
-    System.out.println(rolaDadosString);
     return rolaDadosString;
   }
 }
