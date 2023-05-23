@@ -2,6 +2,7 @@ package Exercises.T2.src.java.utils;
 
 public class Dado extends Random{
   private int numeroLados = 6;
+  int seed = setSemente(getRand());
   private int lado = getIntRand(numeroLados) + 1;
 
   public Dado() {}
@@ -15,6 +16,7 @@ public class Dado extends Random{
   }
 
   public int rolar() {
+    seed = setSemente(getRand());
     lado = getIntRand(numeroLados) + 1;
     return lado;
   }

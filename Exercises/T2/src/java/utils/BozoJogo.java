@@ -93,6 +93,7 @@ public class BozoJogo{
     int[] dados = rolaDados.rolar();
     while (rodada <= 10) {
       imprimirRodada(rodada);
+      dados = rolaDados.rolar();
       for (int trocaDado = 0; trocaDado < 2; trocaDado++) {
         System.out.println(rolaDados.toString());
         boolean[] dadosTrocados = imprimirLerTrocaDados(nDados);
