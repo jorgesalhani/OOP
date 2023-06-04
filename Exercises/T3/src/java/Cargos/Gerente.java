@@ -2,15 +2,20 @@ package Exercises.T3.src.java.Cargos;
 import Exercises.T3.src.java.UtilsABC.Funcionaria;
 
 public class Gerente extends Funcionaria {
-  public Gerente() {}
-
   public Gerente(String nome, String CPF, double salarioBase) {
-    return;
+    this.nome = nome;
+    this.CPF = CPF;
+    this.salarioBase = salarioBase;
   };
 
   public double calculaSalario() {
-    return 3;
+    return this.salarioBase * 2;
   };
 
-  
+  @Override
+  public String toString() {
+    String str = String.format("Cargo: Gerente%n");
+    str += this.superToString();
+    return str;
+  }
 }

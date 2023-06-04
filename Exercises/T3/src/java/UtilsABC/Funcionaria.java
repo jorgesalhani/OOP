@@ -2,9 +2,9 @@ package Exercises.T3.src.java.UtilsABC;
 import Exercises.T3.src.java.Validacoes.CpfInvalidoException;
 
 public abstract class Funcionaria {
-  private String nome;
-  private String CPF;
-  private double salarioBase;
+  public String nome;
+  public String CPF;
+  public double salarioBase;
 
   private static int obterRestoCpfTruncado(String CPF, int posicaoTruncamento) {
     int multiplicador = posicaoTruncamento;
@@ -45,6 +45,14 @@ public abstract class Funcionaria {
         String.format("Número inválido de CPF.%nInformado: %s%n", CPF)
       );
     }
+  }
+
+  public String superToString() {
+    String strF = String.format(
+      "- Nome: %s%n- CPF: %s%n- Salario base: %,.2f%n",
+      this.nome, this.CPF, this.salarioBase
+    );
+    return strF;
   }
 
   public abstract double calculaSalario();
