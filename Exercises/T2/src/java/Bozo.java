@@ -1,3 +1,7 @@
+/**
+ * @author: Jorge Augusto Salgado Salhani - 8927418
+ */
+
 package Exercises.T2.src.java;
 import Exercises.T2.src.java.utils.*;
 
