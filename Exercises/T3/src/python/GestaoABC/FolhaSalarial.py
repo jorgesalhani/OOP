@@ -34,5 +34,5 @@ class FolhaSalarial:
 
         folhaFinal += '***** Acumulado ******\n'
         folhaFinal += '**********************\n'
-        folhaFinal += '      ' + str(self.folhaSalarialAcumulada) + '\n'
+        folhaFinal += str(self.folhaSalarialAcumulada) + ' unidades monetárias \n'
         return folhaFinal

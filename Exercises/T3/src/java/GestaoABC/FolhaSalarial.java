@@ -27,13 +27,13 @@ public class FolhaSalarial {
       folhaFinal += funcId.toString();
 
       double salarioFuncId = funcId.calculaSalario();
-      folhaFinal += String.format(" Salario recebido: %.2f\n\n", salarioFuncId);
+      folhaFinal += String.format(" Salario recebido: %,.2f\n\n", salarioFuncId);
       folhaSalarialAcumulada += salarioFuncId;
     }
 
     folhaFinal += "***** Acumulado ******\n";
     folhaFinal += "**********************\n";
-    folhaFinal += "      " + folhaSalarialAcumulada + "\n";
+    folhaFinal += String.format("%,.2f", folhaSalarialAcumulada) + " unidades monetárias\n";
 
     return folhaFinal;
   }
