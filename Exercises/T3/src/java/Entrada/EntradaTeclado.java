@@ -1,4 +1,4 @@
-package Exercises.T3.src.java.Utils;
+package Exercises.T3.src.java.Entrada;
 
 
 import java.io.BufferedReader;

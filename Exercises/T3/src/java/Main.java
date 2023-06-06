@@ -2,7 +2,8 @@ package Exercises.T3.src.java;
 import Exercises.T3.src.java.Cargos.Assistente;
 import Exercises.T3.src.java.Cargos.Gerente;
 import Exercises.T3.src.java.Cargos.Vendedora;
-import Exercises.T3.src.java.Utils.EntradaTeclado;
+import Exercises.T3.src.java.Entrada.EntradaTeclado;
+import Exercises.T3.src.java.GestaoABC.FolhaSalarial;
 
 public class Main {
   
@@ -11,16 +12,20 @@ public class Main {
     
     Gerente.verificaCPF(cpf);
     Gerente gerente = new Gerente("Iara", cpf, 10.0);
-    System.out.println(gerente.toString());
 
     cpf = "42092105876";
     Vendedora.verificaCPF(cpf);
-    Vendedora vendedora = new Vendedora("Iara", cpf, 10.0);
-    System.out.println(vendedora.toString());
+    Vendedora vendedora = new Vendedora("Iara", cpf, 10.0, 2.0);
 
     cpf = "12345678909";
     Assistente.verificaCPF(cpf);
     Assistente assistente = new Assistente("Iara", cpf, 10.0);
-    System.out.println(assistente.toString());
+
+    FolhaSalarial folhaSalarial = new FolhaSalarial();
+    folhaSalarial.adicionarFuncionaria(assistente);
+    folhaSalarial.adicionarFuncionaria(vendedora);
+    folhaSalarial.adicionarFuncionaria(gerente);
+
+    System.out.println(folhaSalarial);
   }
 }

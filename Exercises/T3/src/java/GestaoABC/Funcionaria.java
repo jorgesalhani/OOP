@@ -1,4 +1,4 @@
-package Exercises.T3.src.java.UtilsABC;
+package Exercises.T3.src.java.GestaoABC;
 import Exercises.T3.src.java.Validacoes.CpfInvalidoException;
 
 public abstract class Funcionaria {
