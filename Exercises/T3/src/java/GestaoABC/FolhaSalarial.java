@@ -23,13 +23,17 @@ public class FolhaSalarial {
     folhaFinal += "===============================\n\n";
     folhaFinal += "======== Folha Salarial =======\n\n";
     
-    for (Object funcId : funcionariasAtuais) {
-      folhaFinal += funcId.toString() + "\n";
+    for (Funcionaria funcId : funcionariasAtuais) {
+      folhaFinal += funcId.toString();
 
-      // double salarioFuncId = funcId.calculaSalario();
-      // folhaFinal += String.format("%f", salarioFuncId);
-      // folhaSalarialAcumulada += salarioFuncId;
+      double salarioFuncId = funcId.calculaSalario();
+      folhaFinal += String.format(" Salario recebido: %.2f\n\n", salarioFuncId);
+      folhaSalarialAcumulada += salarioFuncId;
     }
+
+    folhaFinal += "***** Acumulado ******\n";
+    folhaFinal += "**********************\n";
+    folhaFinal += "      " + folhaSalarialAcumulada + "\n";
 
     return folhaFinal;
   }

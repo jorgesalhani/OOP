@@ -1,6 +1,7 @@
-"""
-@author: Jorge Augusto Salgado Salhani - 8927418
-"""
+/**
+ * @author: Jorge Augusto Salgado Salhani - 8927418
+ */
+
 
 
 package Exercises.T3.src.java;
