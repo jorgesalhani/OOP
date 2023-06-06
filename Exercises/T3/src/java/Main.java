@@ -1,3 +1,8 @@
+"""
+@author: Jorge Augusto Salgado Salhani - 8927418
+"""
+
+
 package Exercises.T3.src.java;
 import Exercises.T3.src.java.Cargos.Assistente;
 import Exercises.T3.src.java.Cargos.Gerente;
